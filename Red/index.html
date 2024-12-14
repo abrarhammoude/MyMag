@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyMag - Your premier online magazine for the latest articles and trending topics">
+    <title>MyMag - Online Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="container">
+        <header class="main-header" role="banner">
+            <div class="logo" aria-label="MyMag Logo">
+                <span class="logo-my">My</span>Mag
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                    <span class="sr-only">Toggle menu</span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul id="main-menu">
+                    <li><a href="#home" aria-current="page">Home</a></li>
+                    <li><a href="article.html">Article</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" role="main">
+            <section class="featured-articles" aria-labelledby="featured-heading">
+                <h1 id="featured-heading" class="section-title">Most read articles</h1>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <img src="images/rectangle-1-51.png" alt="Professional chefs working in a kitchen" loading="lazy" width="400" height="225">
+                        <time datetime="2024-01-15">15 Jan, 2024</time>
+                        <h2><a href="#chef-article">Top 10 chefs in Australia</a></h2>
+                        <p>Discover the culinary masters shaping Australian cuisine</p>
+                    </article>
+
+                    <article class="article-card">
+                        <img src="images/pexels-pixabay-47730.jpg" alt="Soccer players during a match" loading="lazy" width="400" height="225">
+                        <time datetime="2024-07-22">22 Jul, 2024</time>
+                        <h2><a href="#soccer-article">All about soccer</a></h2>
+                        <p>The complete guide to understanding the beautiful game</p>
+                    </article>
+
+                    <article class="article-card">
+                        <img src="images/rectangle-3-53.png" alt="Live concert performance" loading="lazy" width="400" height="225">
+                        <time datetime="2024-08-01">1 Aug, 2024</time>
+                        <h2><a href="#concert-article">Best concert in 2024!</a></h2>
+                        <p>The most anticipated musical events of the year</p>
+                    </article>
+
+                    <article class="article-card">
+                        <img src="images/pexels-luis-gomes-166706-546819.jpg" alt="Computer screen showing programming code" loading="lazy" width="400" height="225">
+                        <time datetime="2024-08-18">18 Aug, 2024</time>
+                        <h2><a href="#coding-article">Most used coding languages</a></h2>
+                        <p>Top programming languages in today's tech industry</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="latest-articles" aria-labelledby="latest-heading">
+                <h2 id="latest-heading" class="section-title">Latest Articles</h2>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <img src="images/rectangle-5-45.png" alt="Color theory demonstration with color wheel" loading="lazy" width="400" height="225">
+                        <time datetime="2024-09-15T12:00">5 minutes ago</time>
+                        <h3><a href="#color-article">The color theory</a></h3>
+                        <p>Understanding the fundamentals of color in design</p>
+                    </article>
+
+                    <article class="article-card">
+                        <img src="images/pexels-olly-1050312.jpg" alt="Handcrafted jewelry pieces" loading="lazy" width="400" height="225">
+                        <time datetime="2024-09-15T11:35">30 minutes ago</time>
+                        <h3><a href="#jewelry-article">Creating Jewelry</a></h3>
+                        <p>A guide to handcrafted jewelry making</p>
+                    </article>
+
+                    <article class="article-card">
+                        <img src="images/rectangle-8-47.png" alt="Professional workplace setting" loading="lazy" width="400" height="225">
+                        <time datetime="2024-09-15T10:05">2 hours ago</time>
+                        <h3><a href="#career-article">How to find the perfect job</a></h3>
+                        <p>Career guidance for professional success</p>
+                    </article>
+
+                    <article class="article-card">
+                        <img src="images/pexels-ferhat-kocakaya-218644751-29560008.jpg" alt="Professional camera equipment" loading="lazy" width="400" height="225">
+                        <time datetime="2024-09-14T14:05">22 hours ago</time>
+                        <h3><a href="#photography-article">Benjamin the photographer</a></h3>
+                        <p>Journey through the lens of a professional</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer" role="contentinfo">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" aria-label="MyMag Logo">
+                        <span class="logo-my">My</span>Mag
+                    </div>
+                    <p class="tagline">Your online magazine</p>
+                    <p class="copyright">Copyright © <span id="current-year">2024</span> MyMag. All rights reserved.</p>
+                </div>
+                <address class="contact-info">
+                    123 Imaginary Lane<br>
+                    Fictional City, FC 45678<br>
+                    <a href="mailto:contact@mymag.com" aria-label="Send email to MyMag">Email: contact@mymag.com</a><br>
+                    <a href="tel:+15551234567" aria-label="Call MyMag">Phone: (555) 123-4567</a>
+                </address>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>
